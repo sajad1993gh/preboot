@@ -5,7 +5,7 @@ function addElementToBeginningOfArray(chocolateBars,element){
  return array
 }
 function destructivelyAddElementToBeginningOfArray(chocolateBars, element){
-  chocolateBars= [element, ...chocolateBars]
+  chocolateBars.unshift(element)
   return chocolateBars
 }
 function addElementToEndOfArray(chocolateBars,element){
@@ -13,10 +13,14 @@ function addElementToEndOfArray(chocolateBars,element){
   return array
 }
 function distructivelyAddElementToEndOfArray(chocolateBars,element){
-  chocolateBars = [...chocolateBars, element]
+  chocolateBars.push(element)
   return chocolateBars
 }
 var index = 0
 function accessElementInArray(chocolateBars,index){
   return chocolateBars[index]
+}
+function destructivelyRemoveElementFromBeginningOfArray(chocolateBars){
+  chocolateBars.shift()
+  return chocolateBars
 }
