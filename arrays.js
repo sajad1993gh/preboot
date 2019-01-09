@@ -13,7 +13,7 @@ function addElementToEndOfArray(chocolateBars,element){
   return array
 }
 function distructivelyAddElementToEndOfArray(chocolateBars,element){
-  chocolateBars.push(element)
+  chocolateBars = chocolateBars.push(element)
   return chocolateBars
 }
 var index = 0
@@ -24,3 +24,4 @@ function destructivelyRemoveElementFromBeginningOfArray(chocolateBars){
   chocolateBars.shift()
   return chocolateBars
 }
+
